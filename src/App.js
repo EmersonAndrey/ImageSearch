@@ -11,7 +11,7 @@ function App() {
   const [debouncedFind, setDebouncedFind] = useState(find);
   //Armazena o valor de pesquisa após aplicar o "debouncing", ou seja, após o tempo de espera para evitar requisições excessivas.
 
-  const apiKey = "RDPiwBnfQAVQveRqIsXHM0DGjG5R55IRJBKKcZBKdhsCryC5ifrShCFE"
+  const apiKey = x
   const url = `https://api.pexels.com/v1/search?query=${find}&per_page=80`;
 
   const fetchPhotos = async () => {
