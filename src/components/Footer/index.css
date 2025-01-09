@@ -11,13 +11,15 @@
 }
 
 p {
-  font-family: "Sniglet", serif;  
+  font-family: "Sniglet", serif;
 }
 
 section {
   display: flex;
-  margin: 17rem;
-  font-size: 20px;
+  margin: 2rem;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 ul {
@@ -28,10 +30,16 @@ ul {
 
 li {
   display: inline;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
-img{
+img {
   width: 35px;
   border-radius: 50px;
+}
+
+@media (max-width: 430px) {
+  img {
+    width: 20px;
+  }
 }

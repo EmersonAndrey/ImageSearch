@@ -4,24 +4,25 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 1rem;
-  width: 100%; 
-  height: auto; 
-  background-color: #ebebeb; 
-  color: #000000; 
+  width: 100%;
+  background-color: #ebebeb;
+  color: #000000;
   padding: 1rem;
   box-sizing: border-box;
-  overflow-y: auto; 
+  overflow-y: auto;
+  gap: 1rem;
 }
 
 .photo {
-  width: 200px; 
-  margin: 1rem; 
-  background-color: #555; 
+  flex: 1 1 calc(100% / 3 - 2rem);
+  max-width: 200px;
+  margin: 1rem;
+  background-color: #555;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .photo-img {
@@ -31,8 +32,20 @@
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
   text-align: center;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .photo {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo {
+    flex: 1 1 100%;
+  }
 }
